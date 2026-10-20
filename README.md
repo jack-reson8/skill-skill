@@ -20,8 +20,17 @@ A Claude skill for writing skills that **actually change what gets generated**, 
 
 ## Install
 
+In Claude Code:
+
+```
+/plugin marketplace add jack-reson8/skill-skill
+/plugin install skill-skill@skill-skill
+```
+
+Or as a plain skill folder:
+
 ```bash
-git clone https://github.com/jack-reson8/skill-skill ~/.claude/skills/skill-skill
+git clone https://github.com/jack-reson8/skill-skill /tmp/skill-skill && cp -R /tmp/skill-skill/plugins/skill-skill/skills/skill-skill ~/.claude/skills/
 ```
 
 ## Audit any skill and get a health score

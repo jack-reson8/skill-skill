@@ -22,7 +22,7 @@ The two best-maintained repos average 96–97/100. Hand-written skills are in go
 ## Check your own skills
 
 ```bash
-git clone https://github.com/jack-reson8/skill-skill ~/.claude/skills/skill-skill
+git clone https://github.com/jack-reson8/skill-skill /tmp/skill-skill && cp -R /tmp/skill-skill/plugins/skill-skill/skills/skill-skill ~/.claude/skills/
 python3 ~/.claude/skills/skill-skill/scripts/skill_audit.py --all --badge   # your installed skills + a README badge
 python3 ~/.claude/skills/skill-skill/scripts/skill_report.py owner/repo     # any public repo → report + chart
 ```

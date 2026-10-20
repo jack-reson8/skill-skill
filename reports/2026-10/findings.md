@@ -31,4 +31,4 @@
 - …and 87 more (see data.json)
 
 
-Reproduce: `python3 scripts/skill_report.py anthropics/skills obra/superpowers ComposioHQ/awesome-claude-skills`
+Reproduce: `python3 plugins/skill-skill/skills/skill-skill/scripts/skill_report.py anthropics/skills obra/superpowers ComposioHQ/awesome-claude-skills`

@@ -1,0 +1,12 @@
+{
+  "name": "skill-skill",
+  "description": "Write Claude skills that actually change what gets generated, and lint them with a 0-100 health score.",
+  "owner": { "name": "jack-reson8" },
+  "plugins": [
+    {
+      "name": "skill-skill",
+      "source": "./plugins/skill-skill",
+      "description": "Distil real work into skills with forcing functions (artifacts, gates, scripts), triggerable descriptions, a spec-based audit with health score and badge, and one-command reports for public skill repos."
+    }
+  ]
+}

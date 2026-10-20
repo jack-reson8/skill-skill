@@ -22,7 +22,7 @@
 ## 体检你自己的 skill
 
 ```bash
-git clone https://github.com/jack-reson8/skill-skill ~/.claude/skills/skill-skill
+git clone https://github.com/jack-reson8/skill-skill /tmp/skill-skill && cp -R /tmp/skill-skill/plugins/skill-skill/skills/skill-skill ~/.claude/skills/
 python3 ~/.claude/skills/skill-skill/scripts/skill_audit.py --all --badge   # 检查本机装的所有 skill，并生成 README 徽章
 python3 ~/.claude/skills/skill-skill/scripts/skill_report.py owner/repo     # 任意公开仓库 → 报告 + 图表
 ```

@@ -45,7 +45,7 @@ name-of-skill/
 ## 4 · Audit (static, seconds)
 
 ```bash
-python3 ~/.claude/skills/skill-skill/scripts/skill_audit.py <skill_dir>     # or --all; --badge prints a README badge
+python3 <this skill's base directory>/scripts/skill_audit.py <skill_dir>     # or --all; --badge prints a README badge
 ```
 Flags: bad name / folder mismatch, description too long or without a trigger clause, name collisions, **orphan files** never mentioned in SKILL.md, **dangling paths**, oversized body, ALL-CAPS overuse, steps that produce nothing. Prints a 0–100 health score (−15 per ✗, −5 per warning). Fix every ✗. To benchmark public repos (report + chart + data), run `scripts/skill_report.py owner/repo …`.
 

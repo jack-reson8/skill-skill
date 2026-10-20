@@ -1,0 +1,9 @@
+{
+  "name": "skill-skill",
+  "description": "Write Claude skills that actually change what gets generated, and lint them with a 0-100 health score.",
+  "version": "1.0.0",
+  "author": { "name": "jack-reson8" },
+  "homepage": "https://github.com/jack-reson8/skill-skill",
+  "license": "MIT",
+  "keywords": ["claude-skills", "agent-skills", "skill-creator", "linter", "audit", "prompt-engineering", "claude-code"]
+}
