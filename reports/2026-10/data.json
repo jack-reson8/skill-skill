@@ -1,0 +1,7437 @@
+[
+ {
+  "repo": "anthropics/skills",
+  "commit": "dbd4588",
+  "skills": 20,
+  "avg": 96,
+  "no_trigger": 15,
+  "spec": 10,
+  "broken_refs": 1,
+  "details": [
+   {
+    "path": "skills/academy-guide",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/algorithmic-art",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/brand-guidelines",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "skills/canvas-design",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/claude-api",
+    "score": 80,
+    "issues": [
+     "description 1068 chars > 1024"
+    ],
+    "notes": [
+     "warn: SKILL.md body > 500 lines — move detail into references with pointers"
+    ]
+   },
+   {
+    "path": "skills/discernment-nudge",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/doc-coauthoring",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/docx",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/frontend-design",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/internal-comms",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/mcp-builder",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/pdf",
+    "score": 85,
+    "issues": [
+     "1 orphan file(s) nothing points to: scripts/create_validation_image.py"
+    ],
+    "notes": []
+   },
+   {
+    "path": "skills/pptx",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/skill-creator",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/slack-gif-creator",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/theme-factory",
+    "score": 90,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "skills/web-artifacts-builder",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "skills/webapp-testing",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "skills/xlsx",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "template",
+    "score": 80,
+    "issues": [
+     "name \"template-skill\" ≠ folder \"template\""
+    ],
+    "notes": [
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   }
+  ]
+ },
+ {
+  "repo": "obra/superpowers",
+  "commit": "bb92a77",
+  "skills": 15,
+  "avg": 97,
+  "no_trigger": 7,
+  "spec": 0,
+  "broken_refs": 2,
+  "details": [
+   {
+    "path": "skills/brainstorming",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "skills/diagnosing-superpowers",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/dispatching-parallel-agents",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/executing-plans",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/finishing-a-development-branch",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/receiving-code-review",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/requesting-code-review",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/subagent-driven-development",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: SKILL.md body > 500 lines — move detail into references with pointers"
+    ]
+   },
+   {
+    "path": "skills/systematic-debugging",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/test-driven-development",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/using-git-worktrees",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/using-superpowers",
+    "score": 85,
+    "issues": [
+     "1 orphan file(s) nothing points to: references/gemini-tools.md"
+    ],
+    "notes": []
+   },
+   {
+    "path": "skills/verification-before-completion",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/writing-plans",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "skills/writing-skills",
+    "score": 75,
+    "issues": [
+     "1 dangling path(s): scripts/tool.sh"
+    ],
+    "notes": [
+     "warn: 5 ALL-CAPS commands — explain the why instead",
+     "warn: SKILL.md body > 500 lines — move detail into references with pointers"
+    ]
+   }
+  ]
+ },
+ {
+  "repo": "ComposioHQ/awesome-claude-skills",
+  "commit": "be2a406",
+  "skills": 864,
+  "avg": 92,
+  "no_trigger": 98,
+  "spec": 11,
+  "broken_refs": 2,
+  "details": [
+   {
+    "path": "artifacts-builder",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "brand-guidelines",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "canvas-design",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "changelog-generator",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "competitive-ads-extractor",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/-21risk-automation",
+    "score": 80,
+    "issues": [
+     "name \"-21risk-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/-2chat-automation",
+    "score": 80,
+    "issues": [
+     "name \"-2chat-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ably-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/abstract-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/abuselpdb-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/abyssale-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/accelo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/accredible-certificates-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/acculynx-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/active-campaign-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/addresszen-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/adobe-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/adrapid-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/adyntel-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/aero-workflow-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/aeroleads-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/affinda-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/affinity-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/agencyzoom-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/agent-mail-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/agentql-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/agenty-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/agiled-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/agility-cms-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ahrefs-automation",
+    "score": 65,
+    "issues": [
+     "name \"Ahrefs Automation\" must be lowercase-hyphen",
+     "name \"Ahrefs Automation\" ≠ folder \"ahrefs-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ai-ml-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/aivoov-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/alchemy-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/algodocs-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/algolia-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/all-images-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/alpha-vantage-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/altoviz-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/alttext-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/amara-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/amazon-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ambee-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ambient-weather-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/amcards-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/anchor-browser-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/anonyflow-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/anthropic-administrator-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/anthropic_administrator-automation",
+    "score": 80,
+    "issues": [
+     "name \"anthropic_administrator-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/apaleo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/apex27-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/api-bible-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/api-labz-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/api-ninjas-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/api-sports-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/api2pdf-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/apiflash-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/apify-automation",
+    "score": 65,
+    "issues": [
+     "name \"Apify Automation\" must be lowercase-hyphen",
+     "name \"Apify Automation\" ≠ folder \"apify-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/apilio-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/apipie-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/apitemplate-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/apiverve-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/apollo-automation",
+    "score": 65,
+    "issues": [
+     "name \"Apollo Automation\" must be lowercase-hyphen",
+     "name \"Apollo Automation\" ≠ folder \"apollo-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/appcircle-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/appdrag-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/appointo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/appsflyer-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/appveyor-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/aryn-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ascora-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ashby-automation",
+    "score": 60,
+    "issues": [
+     "name \"Ashby Automation\" must be lowercase-hyphen",
+     "name \"Ashby Automation\" ≠ folder \"ashby-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/asin-data-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/astica-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/async-interview-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/atlassian-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/attio-automation",
+    "score": 65,
+    "issues": [
+     "name \"Attio Automation\" must be lowercase-hyphen",
+     "name \"Attio Automation\" ≠ folder \"attio-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/auth0-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/autobound-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/autom-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/axonaut-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ayrshare-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/backendless-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bannerbear-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bart-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/baselinker-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/baserow-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/basin-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/battlenet-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/beaconchain-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/beaconstac-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/beamer-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/beeminder-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bench-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/benchmark-email-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/benzinga-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bestbuy-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/better-proposals-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/better-stack-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bidsketch-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/big-data-cloud-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bigmailer-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bigml-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bigpicture-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bitquery-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bitwarden-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/blackbaud-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/blackboard-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/blocknative-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/boldsign-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bolna-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/boloforms-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bolt-iot-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bonsai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bookingmood-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/booqable-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/borneo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/botbaba-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/botpress-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/botsonic-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/botstar-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bouncer-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/boxhero-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/braintree-automation",
+    "score": 60,
+    "issues": [
+     "name \"Braintree Automation\" must be lowercase-hyphen",
+     "name \"Braintree Automation\" ≠ folder \"braintree-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/brandfetch-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/breeze-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/breezy-hr-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/brex-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/brex-staging-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/brightdata-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/brightpearl-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/brilliant-directories-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/browseai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/browser-tool-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/browserbase-tool-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/browserhub-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/browserless-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/btcpay-server-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bubble-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bugbug-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bugherd-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bugsnag-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/buildkite-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/builtwith-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/bunnycdn-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/byteforms-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cabinpanda-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cal-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/calendarhero-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/callerapi-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/callingly-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/callpage-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/campaign-cleaner-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/campayn-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/canny-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/canvas-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/capsule-crm-automation",
+    "score": 65,
+    "issues": [
+     "name \"Capsule CRM Automation\" must be lowercase-hyphen",
+     "name \"Capsule CRM Automation\" ≠ folder \"capsule-crm-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/capsule_crm-automation",
+    "score": 80,
+    "issues": [
+     "name \"capsule_crm-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/carbone-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cardly-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/castingwords-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cats-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cdr-platform-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/census-bureau-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/centralstationcrm-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/certifier-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/chaser-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/chatbotkit-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/chatfai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/chatwork-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/chmeetings-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cincopa-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/claid-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/classmarker-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/clearout-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/clickmeeting-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/clockify-automation",
+    "score": 65,
+    "issues": [
+     "name \"Clockify Automation\" must be lowercase-hyphen",
+     "name \"Clockify Automation\" ≠ folder \"clockify-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cloudcart-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cloudconvert-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cloudflare-api-key-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cloudflare-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cloudflare-browser-rendering-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cloudinary-automation",
+    "score": 65,
+    "issues": [
+     "name \"Cloudinary Automation\" must be lowercase-hyphen",
+     "name \"Cloudinary Automation\" ≠ folder \"cloudinary-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cloudlayer-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cloudpress-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/coassemble-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/codacy-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/codeinterpreter-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/codereadr-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/coinbase-automation",
+    "score": 65,
+    "issues": [
+     "name \"Coinbase Automation\" must be lowercase-hyphen",
+     "name \"Coinbase Automation\" ≠ folder \"coinbase-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/coinmarketcal-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/coinmarketcap-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/coinranking-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/college-football-data-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/composio-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/composio-search-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/connecteam-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/contentful-automation",
+    "score": 65,
+    "issues": [
+     "name \"Contentful Automation\" must be lowercase-hyphen",
+     "name \"Contentful Automation\" ≠ folder \"contentful-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/contentful-graphql-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/control-d-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/conversion-tools-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/convertapi-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/conveyor-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/convolo-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/corrently-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/countdown-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/coupa-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/craftmypdf-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/crowdin-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/crustdata-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cults-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/curated-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/currents-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/customerio-automation",
+    "score": 65,
+    "issues": [
+     "name \"Customer.io Automation\" must be lowercase-hyphen",
+     "name \"Customer.io Automation\" ≠ folder \"customerio-automation\""
+    ],
+    "notes": [
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/customgpt-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/customjs-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/cutt-ly-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/d2lbrightspace-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dadata-ru-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/daffy-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dailybot-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/datagma-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/datarobot-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/deadline-funnel-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/deel-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/deepgram-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/demio-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/desktime-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/detrack-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dialmycalls-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dialpad-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dictionary-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/diffbot-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/digicert-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/digital-ocean-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/discordbot-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dnsfilter-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dock-certs-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/docker-hub-automation",
+    "score": 60,
+    "issues": [
+     "name \"Docker Hub Automation\" must be lowercase-hyphen",
+     "name \"Docker Hub Automation\" ≠ folder \"docker-hub-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/docker_hub-automation",
+    "score": 80,
+    "issues": [
+     "name \"docker_hub-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/docmosis-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/docnify-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/docsbot-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/docsumo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/docugenerate-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/documenso-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/documint-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/docupilot-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/docupost-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/docuseal-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/doppler-marketing-automation-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/doppler-secretops-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dotsimple-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dovetail-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dpd2-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/draftable-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dreamstudio-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/drip-jobs-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dripcel-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dromo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dropbox-sign-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dropcontact-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dungeon-fighter-online-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/dynamics365-automation",
+    "score": 60,
+    "issues": [
+     "name \"Dynamics 365 Automation\" must be lowercase-hyphen",
+     "name \"Dynamics 365 Automation\" ≠ folder \"dynamics365-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/echtpost-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/elevenlabs-automation",
+    "score": 65,
+    "issues": [
+     "name \"ElevenLabs Automation\" must be lowercase-hyphen",
+     "name \"ElevenLabs Automation\" ≠ folder \"elevenlabs-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/elorus-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/emailable-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/emaillistverify-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/emailoctopus-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/emelia-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/encodian-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/endorsal-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/enginemailer-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/enigma-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/entelligence-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/eodhd-apis-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/epic-games-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/esignatures-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/espocrm-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/esputnik-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/etermin-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/evenium-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/eventbrite-automation",
+    "score": 60,
+    "issues": [
+     "name \"Eventbrite Automation\" must be lowercase-hyphen",
+     "name \"Eventbrite Automation\" ≠ folder \"eventbrite-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/eventee-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/eventzilla-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/everhour-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/eversign-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/exa-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/excel-automation",
+    "score": 65,
+    "issues": [
+     "name \"Excel Automation\" must be lowercase-hyphen",
+     "name \"Excel Automation\" ≠ folder \"excel-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/exist-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/expofp-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/extracta-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/facebook-automation",
+    "score": 65,
+    "issues": [
+     "name \"Facebook Automation\" must be lowercase-hyphen",
+     "name \"Facebook Automation\" ≠ folder \"facebook-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/faceup-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/factorial-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/feathery-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/felt-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fibery-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fidel-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/files-com-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fillout-forms-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fillout_forms-automation",
+    "score": 80,
+    "issues": [
+     "name \"fillout_forms-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/finage-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/findymail-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/finerworks-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fingertip-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/finmei-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fireberry-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/firecrawl-automation",
+    "score": 65,
+    "issues": [
+     "name \"Firecrawl Automation\" must be lowercase-hyphen",
+     "name \"Firecrawl Automation\" ≠ folder \"firecrawl-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fireflies-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/firmao-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fitbit-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fixer-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fixer-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/flexisign-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/flowiseai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/flutterwave-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fluxguard-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/folk-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fomo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/forcemanager-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/formbricks-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/formcarry-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/formdesk-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/formsite-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/foursquare-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fraudlabs-pro-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/freshbooks-automation",
+    "score": 65,
+    "issues": [
+     "name \"FreshBooks Automation\" must be lowercase-hyphen",
+     "name \"FreshBooks Automation\" ≠ folder \"freshbooks-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/front-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/fullenrich-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gagelist-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gamma-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gan-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gatherup-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gemini-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gender-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/genderapi-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/genderize-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/geoapify-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/geocodio-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/geokeo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/getform-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gift-up-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gigasheet-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/giphy-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gist-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/givebutter-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gladia-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gleap-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/globalping-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/go-to-webinar-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/godial-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gong-automation",
+    "score": 60,
+    "issues": [
+     "name \"Gong Automation\" must be lowercase-hyphen",
+     "name \"Gong Automation\" ≠ folder \"gong-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/goodbits-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/goody-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/google-address-validation-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/google-admin-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/google-classroom-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/google-cloud-vision-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/google-maps-automation",
+    "score": 90,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/google-search-console-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/google_admin-automation",
+    "score": 80,
+    "issues": [
+     "name \"google_admin-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/google_classroom-automation",
+    "score": 80,
+    "issues": [
+     "name \"google_classroom-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/google_maps-automation",
+    "score": 80,
+    "issues": [
+     "name \"google_maps-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/google_search_console-automation",
+    "score": 80,
+    "issues": [
+     "name \"google_search_console-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/googleads-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/googlebigquery-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/googlecalendar-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/googledocs-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/googledrive-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/googlemeet-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/googlephotos-automation",
+    "score": 90,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/googleslides-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/googlesuper-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/googletasks-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gorgias-automation",
+    "score": 65,
+    "issues": [
+     "name \"Gorgias Automation\" must be lowercase-hyphen",
+     "name \"Gorgias Automation\" ≠ folder \"gorgias-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gosquared-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/grafbase-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/graphhopper-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/griptape-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/grist-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/groqcloud-automation",
+    "score": 65,
+    "issues": [
+     "name \"GroqCloud Automation\" must be lowercase-hyphen",
+     "name \"GroqCloud Automation\" ≠ folder \"groqcloud-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/gumroad-automation",
+    "score": 65,
+    "issues": [
+     "name \"Gumroad Automation\" must be lowercase-hyphen",
+     "name \"Gumroad Automation\" ≠ folder \"gumroad-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/habitica-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/hackernews-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/happy-scribe-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/harvest-automation",
+    "score": 60,
+    "issues": [
+     "name \"Harvest Automation\" must be lowercase-hyphen",
+     "name \"Harvest Automation\" ≠ folder \"harvest-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/hashnode-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/helcim-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/helloleads-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/helpwise-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/here-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/heygen-automation",
+    "score": 65,
+    "issues": [
+     "name \"HeyGen Automation\" must be lowercase-hyphen",
+     "name \"HeyGen Automation\" ≠ folder \"heygen-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/heyreach-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/heyzine-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/highergov-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/highlevel-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/honeybadger-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/honeyhive-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/hookdeck-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/hotspotsystem-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/html-to-image-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/humanitix-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/humanloop-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/hunter-automation",
+    "score": 65,
+    "issues": [
+     "name \"Hunter Automation\" must be lowercase-hyphen",
+     "name \"Hunter Automation\" ≠ folder \"hunter-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/hypeauditor-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/hyperbrowser-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/hyperise-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/hystruct-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/icims-talent-cloud-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/icypeas-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/idea-scale-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/identitycheck-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ignisign-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/imagekit-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/imgbb-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/imgix-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/influxdb-cloud-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/insighto-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/instacart-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/instantly-automation",
+    "score": 60,
+    "issues": [
+     "name \"Instantly Automation\" must be lowercase-hyphen",
+     "name \"Instantly Automation\" ≠ folder \"instantly-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/intelliprint-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/interzoid-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ip2location-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ip2location-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ip2proxy-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ip2whois-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ipdata-co-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ipinfo-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/iqair-airvisual-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/jigsawstack-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/jobnimbus-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/jotform-automation",
+    "score": 65,
+    "issues": [
+     "name \"Jotform Automation\" must be lowercase-hyphen",
+     "name \"Jotform Automation\" ≠ folder \"jotform-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/jumpcloud-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/junglescout-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/kadoa-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/kaggle-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/kaleido-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/keap-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/keen-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/kickbox-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/kit-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/klipfolio-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ko-fi-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/kommo-automation",
+    "score": 60,
+    "issues": [
+     "name \"Kommo Automation\" must be lowercase-hyphen",
+     "name \"Kommo Automation\" ≠ folder \"kommo-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/kontent-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/kraken-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/l2s-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/labs64-netlicensing-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/landbot-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/langbase-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/lastpass-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/launch-darkly-automation",
+    "score": 70,
+    "issues": [
+     "name \"LaunchDarkly Automation\" must be lowercase-hyphen",
+     "name \"LaunchDarkly Automation\" ≠ folder \"launch-darkly-automation\""
+    ],
+    "notes": []
+   },
+   {
+    "path": "composio-skills/launch_darkly-automation",
+    "score": 80,
+    "issues": [
+     "name \"launch_darkly-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/leadfeeder-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/leadoku-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/leiga-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/lemlist-automation",
+    "score": 65,
+    "issues": [
+     "name \"Lemlist Automation\" must be lowercase-hyphen",
+     "name \"Lemlist Automation\" ≠ folder \"lemlist-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/lemon-squeezy-automation",
+    "score": 60,
+    "issues": [
+     "name \"Lemon Squeezy Automation\" must be lowercase-hyphen",
+     "name \"Lemon Squeezy Automation\" ≠ folder \"lemon-squeezy-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/lemon_squeezy-automation",
+    "score": 80,
+    "issues": [
+     "name \"lemon_squeezy-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/lessonspace-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/lever-automation",
+    "score": 65,
+    "issues": [
+     "name \"Lever Automation\" must be lowercase-hyphen",
+     "name \"Lever Automation\" ≠ folder \"lever-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/lever-sandbox-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/leverly-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/lexoffice-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/linguapop-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/linkhut-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/linkup-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/listclean-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/listennotes-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/livesession-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/lmnt-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/lodgify-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/logo-dev-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/loomio-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/loyverse-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/magnetic-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mailbluster-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mailboxlayer-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mailcheck-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mailcoach-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mailerlite-automation",
+    "score": 65,
+    "issues": [
+     "name \"MailerLite Automation\" must be lowercase-hyphen",
+     "name \"MailerLite Automation\" ≠ folder \"mailerlite-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mailersend-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mails-so-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mailsoftly-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/maintainx-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/many-chat-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/many_chat-automation",
+    "score": 80,
+    "issues": [
+     "name \"many_chat-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mapbox-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mapulus-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mboum-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/melo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mem-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mem0-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/memberspot-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/memberstack-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/membervault-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/metaads-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/metaphor-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mezmo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/microsoft-clarity-automation",
+    "score": 65,
+    "issues": [
+     "name \"Microsoft Clarity Automation\" must be lowercase-hyphen",
+     "name \"Microsoft Clarity Automation\" ≠ folder \"microsoft-clarity-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/microsoft-tenant-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/microsoft_clarity-automation",
+    "score": 80,
+    "issues": [
+     "name \"microsoft_clarity-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/minerstat-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/missive-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mistral-ai-automation",
+    "score": 60,
+    "issues": [
+     "name \"Mistral AI Automation\" must be lowercase-hyphen",
+     "name \"Mistral AI Automation\" ≠ folder \"mistral-ai-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/mistral_ai-automation",
+    "score": 80,
+    "issues": [
+     "name \"mistral_ai-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mocean-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/moco-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/modelry-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/moneybird-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/moonclerk-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/moosend-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mopinion-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/more-trees-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/moxie-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/moz-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/msg91-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mural-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mx-technologies-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/mx-toolbox-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/nango-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/nano-nets-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/nasa-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/nasdaq-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ncscale-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/needle-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/neon-automation",
+    "score": 65,
+    "issues": [
+     "name \"Neon Automation\" must be lowercase-hyphen",
+     "name \"Neon Automation\" ≠ folder \"neon-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/netsuite-automation",
+    "score": 65,
+    "issues": [
+     "name \"NetSuite Automation\" must be lowercase-hyphen",
+     "name \"NetSuite Automation\" ≠ folder \"netsuite-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/neuronwriter-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/neutrino-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/neverbounce-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/new-relic-automation",
+    "score": 60,
+    "issues": [
+     "name \"New Relic Automation\" must be lowercase-hyphen",
+     "name \"New Relic Automation\" ≠ folder \"new-relic-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/new_relic-automation",
+    "score": 80,
+    "issues": [
+     "name \"new_relic-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/news-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/nextdns-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ngrok-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ninox-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/nocrm-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/npm-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ocr-web-service-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ocrspace-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/omnisend-automation",
+    "score": 65,
+    "issues": [
+     "name \"Omnisend Automation\" must be lowercase-hyphen",
+     "name \"Omnisend Automation\" ≠ folder \"omnisend-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/oncehub-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/onedesk-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/onepage-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/onesignal-rest-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/onesignal-user-auth-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/onesignal_rest_api-automation",
+    "score": 80,
+    "issues": [
+     "name \"onesignal_rest_api-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/open-sea-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/openai-automation",
+    "score": 65,
+    "issues": [
+     "name \"OpenAI Automation\" must be lowercase-hyphen",
+     "name \"OpenAI Automation\" ≠ folder \"openai-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/opencage-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/opengraph-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/openperplex-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/openrouter-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/openweather-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/optimoroute-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/owl-protocol-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/page-x-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/pandadoc-automation",
+    "score": 65,
+    "issues": [
+     "name \"PandaDoc Automation\" must be lowercase-hyphen",
+     "name \"PandaDoc Automation\" ≠ folder \"pandadoc-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/paradym-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/parallel-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/parma-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/parsehub-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/parsera-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/parseur-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/passcreator-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/passslot-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/payhip-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/pdf-api-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/pdf-co-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/pdf4me-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/pdfless-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/pdfmonkey-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/peopledatalabs-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/perigon-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/perplexityai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/persistiq-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/pexels-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/phantombuster-automation",
+    "score": 65,
+    "issues": [
+     "name \"PhantomBuster Automation\" must be lowercase-hyphen",
+     "name \"PhantomBuster Automation\" ≠ folder \"phantombuster-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/piggy-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/piloterr-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/pilvio-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/pingdom-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/pipeline-crm-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/placekey-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/placid-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/plain-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/plasmic-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/platerecognizer-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/plisio-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/polygon-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/polygon-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/poptin-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/postgrid-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/postgrid-verify-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/precoro-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/prerender-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/printautopilot-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/prisma-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/prismic-automation",
+    "score": 60,
+    "issues": [
+     "name \"Prismic Automation\" must be lowercase-hyphen",
+     "name \"Prismic Automation\" ≠ folder \"prismic-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/process-street-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/procfu-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/productboard-automation",
+    "score": 65,
+    "issues": [
+     "name \"Productboard Automation\" must be lowercase-hyphen",
+     "name \"Productboard Automation\" ≠ folder \"productboard-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/productlane-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/project-bubble-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/proofly-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/proxiedmail-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/pushbullet-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/pushover-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/quaderno-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/qualaroo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/quickbooks-automation",
+    "score": 60,
+    "issues": [
+     "name \"QuickBooks Automation\" must be lowercase-hyphen",
+     "name \"QuickBooks Automation\" ≠ folder \"quickbooks-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/radar-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/rafflys-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ragic-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/raisely-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ramp-automation",
+    "score": 60,
+    "issues": [
+     "name \"Ramp Automation\" must be lowercase-hyphen",
+     "name \"Ramp Automation\" ≠ folder \"ramp-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/ravenseotools-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/re-amaze-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/realphonevalidation-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/recallai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/recruitee-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/refiner-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/remarkety-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/remote-retrieval-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/remove-bg-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/renderform-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/repairshopr-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/replicate-automation",
+    "score": 65,
+    "issues": [
+     "name \"Replicate Automation\" must be lowercase-hyphen",
+     "name \"Replicate Automation\" ≠ folder \"replicate-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/reply-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/reply-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/resend-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/respond-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/retailed-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/retellai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/retently-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/rev-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/revolt-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ring-central-automation",
+    "score": 65,
+    "issues": [
+     "name \"RingCentral Automation\" must be lowercase-hyphen",
+     "name \"RingCentral Automation\" ≠ folder \"ring-central-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ring_central-automation",
+    "score": 80,
+    "issues": [
+     "name \"ring_central-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/rippling-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ritekit-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/rkvst-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/rocketlane-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/rootly-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/rosette-text-analytics-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/route4me-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/safetyculture-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sage-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/salesforce-marketing-cloud-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/salesforce-service-cloud-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/salesmate-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sap-successfactors-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/satismeter-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/scrape-do-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/scrapegraph-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/scrapfly-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/scrapingant-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/scrapingbee-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/screenshot-fyi-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/screenshotone-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/seat-geek-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/securitytrails-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/segmetrics-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/seismic-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/semanticscholar-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/semrush-automation",
+    "score": 65,
+    "issues": [
+     "name \"SEMrush Automation\" must be lowercase-hyphen",
+     "name \"SEMrush Automation\" ≠ folder \"semrush-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sendbird-ai-chabot-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sendbird-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sendfox-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sendlane-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sendloop-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sendspark-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sensibo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/seqera-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/serpapi-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/serpdog-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/serply-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/servicem8-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sevdesk-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/share-point-automation",
+    "score": 60,
+    "issues": [
+     "name \"SharePoint Automation\" must be lowercase-hyphen",
+     "name \"SharePoint Automation\" ≠ folder \"share-point-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/share_point-automation",
+    "score": 80,
+    "issues": [
+     "name \"share_point-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/shipengine-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/short-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/short-menu-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/shortcut-automation",
+    "score": 65,
+    "issues": [
+     "name \"Shortcut Automation\" must be lowercase-hyphen",
+     "name \"Shortcut Automation\" ≠ folder \"shortcut-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/shorten-rest-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/shortpixel-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/shotstack-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sidetracker-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/signaturely-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/signpath-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/signwell-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/similarweb-digitalrank-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/similarweb_digitalrank_api-automation",
+    "score": 80,
+    "issues": [
+     "name \"similarweb_digitalrank_api-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/simla-com-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/simple-analytics-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/simplesat-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sitespeakai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/skyfire-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/slackbot-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/smartproxy-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/smartrecruiters-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sms-alert-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/smtp2go-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/smugmug-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/snowflake-automation",
+    "score": 60,
+    "issues": [
+     "name \"Snowflake Automation\" must be lowercase-hyphen",
+     "name \"Snowflake Automation\" ≠ folder \"snowflake-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/sourcegraph-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/splitwise-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/spoki-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/spondyr-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/spotify-automation",
+    "score": 60,
+    "issues": [
+     "name \"Spotify Automation\" must be lowercase-hyphen",
+     "name \"Spotify Automation\" ≠ folder \"spotify-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "composio-skills/spotlightr-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sslmate-cert-spotter-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/stack-exchange-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/stannp-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/starton-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/statuscake-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/storeganise-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/storerocket-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/stormglass-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/strava-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/streamtime-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/supadata-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/superchat-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/supportbee-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/supportivekoala-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/survey-monkey-automation",
+    "score": 65,
+    "issues": [
+     "name \"SurveyMonkey Automation\" must be lowercase-hyphen",
+     "name \"SurveyMonkey Automation\" ≠ folder \"survey-monkey-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/survey_monkey-automation",
+    "score": 80,
+    "issues": [
+     "name \"survey_monkey-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/svix-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/sympla-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/synthflow-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/taggun-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/talenthr-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/tally-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/tapfiliate-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/tapform-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/tavily-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/taxjar-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/teamcamp-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/telnyx-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/teltel-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/templated-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/test-app-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/text-to-pdf-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/textcortex-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/textit-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/textrazor-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/thanks-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/the-odds-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ticketmaster-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ticktick-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/timecamp-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/timekit-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/timelinesai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/timelink-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/timely-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/tinyurl-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/tisane-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/toggl-automation",
+    "score": 65,
+    "issues": [
+     "name \"Toggl Automation\" must be lowercase-hyphen",
+     "name \"Toggl Automation\" ≠ folder \"toggl-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/token-metrics-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/tomba-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/tomtom-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/toneden-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/tpscheck-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/triggercmd-automation",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "composio-skills/tripadvisor-content-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/turbot-pipes-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/turso-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/twelve-data-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/twitch-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/twocaptcha-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/typefully-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/typless-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/u301-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/unione-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/updown-io-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/uploadcare-automation",
+    "score": 65,
+    "issues": [
+     "name \"Uploadcare Automation\" must be lowercase-hyphen",
+     "name \"Uploadcare Automation\" ≠ folder \"uploadcare-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/uptimerobot-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/userlist-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/v0-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/venly-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/veo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/verifiedemail-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/veriphone-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/vero-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/vestaboard-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/virustotal-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/visme-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/waboxapp-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/wachete-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/waiverfile-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/wakatime-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/wati-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/wave-accounting-automation",
+    "score": 65,
+    "issues": [
+     "name \"Wave Accounting Automation\" must be lowercase-hyphen",
+     "name \"Wave Accounting Automation\" ≠ folder \"wave-accounting-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/wave_accounting-automation",
+    "score": 80,
+    "issues": [
+     "name \"wave_accounting-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/weathermap-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/webex-automation",
+    "score": 65,
+    "issues": [
+     "name \"Webex Automation\" must be lowercase-hyphen",
+     "name \"Webex Automation\" ≠ folder \"webex-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/webscraping-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/webvizio-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/whautomate-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/winston-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/wit-ai-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/wiz-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/wolfram-alpha-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/woodpecker-co-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/workable-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/workday-automation",
+    "score": 65,
+    "issues": [
+     "name \"Workday Automation\" must be lowercase-hyphen",
+     "name \"Workday Automation\" ≠ folder \"workday-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/workiom-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/worksnaps-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/writer-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/xero-automation",
+    "score": 65,
+    "issues": [
+     "name \"Xero Automation\" must be lowercase-hyphen",
+     "name \"Xero Automation\" ≠ folder \"xero-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/y-gy-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/yandex-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/yelp-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/ynab-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/yousearch-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zenrows-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zenserp-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zeplin-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zerobounce-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoho-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoho-bigin-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoho-books-automation",
+    "score": 65,
+    "issues": [
+     "name \"Zoho Books Automation\" must be lowercase-hyphen",
+     "name \"Zoho Books Automation\" ≠ folder \"zoho-books-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoho-desk-automation",
+    "score": 65,
+    "issues": [
+     "name \"Zoho Desk Automation\" must be lowercase-hyphen",
+     "name \"Zoho Desk Automation\" ≠ folder \"zoho-desk-automation\""
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoho-inventory-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoho-invoice-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoho-mail-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoho_bigin-automation",
+    "score": 80,
+    "issues": [
+     "name \"zoho_bigin-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoho_books-automation",
+    "score": 80,
+    "issues": [
+     "name \"zoho_books-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoho_desk-automation",
+    "score": 80,
+    "issues": [
+     "name \"zoho_desk-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoho_inventory-automation",
+    "score": 80,
+    "issues": [
+     "name \"zoho_inventory-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoho_invoice-automation",
+    "score": 80,
+    "issues": [
+     "name \"zoho_invoice-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoho_mail-automation",
+    "score": 80,
+    "issues": [
+     "name \"zoho_mail-automation\" must be lowercase-hyphen"
+    ],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zoominfo-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zylvie-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "composio-skills/zyte-api-automation",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "connect-apps",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "connect",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "content-research-writer",
+    "score": 90,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: SKILL.md body > 500 lines — move detail into references with pointers"
+    ]
+   },
+   {
+    "path": "developer-growth-analysis",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "document-skills/docx",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "document-skills/pdf",
+    "score": 85,
+    "issues": [
+     "1 orphan file(s) nothing points to: scripts/check_bounding_boxes_test.py"
+    ],
+    "notes": []
+   },
+   {
+    "path": "document-skills/pptx",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: 5 ALL-CAPS commands — explain the why instead"
+    ]
+   },
+   {
+    "path": "document-skills/xlsx",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "domain-name-brainstormer",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "file-organizer",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "image-enhancer",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "internal-comms",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "invoice-organizer",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "langsmith-fetch",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "lead-research-assistant",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "mcp-builder",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "meeting-insights-analyzer",
+    "score": 100,
+    "issues": [],
+    "notes": []
+   },
+   {
+    "path": "raffle-winner-picker",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "skill-creator",
+    "score": 85,
+    "issues": [
+     "3 dangling path(s): assets/hello-world/, references/schema.md, scripts/rotate_pdf.py"
+    ],
+    "notes": []
+   },
+   {
+    "path": "skill-share",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "slack-gif-creator",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: SKILL.md body > 500 lines — move detail into references with pointers"
+    ]
+   },
+   {
+    "path": "tailored-resume-generator",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "template-skill",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "theme-factory",
+    "score": 90,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)",
+     "warn: no step produces an artifact or runs a check — the skill may not change output"
+    ]
+   },
+   {
+    "path": "twitter-algorithm-optimizer",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   },
+   {
+    "path": "video-downloader",
+    "score": 85,
+    "issues": [
+     "name \"youtube-downloader\" ≠ folder \"video-downloader\""
+    ],
+    "notes": []
+   },
+   {
+    "path": "webapp-testing",
+    "score": 95,
+    "issues": [],
+    "notes": [
+     "warn: description has no \"Use when…\" trigger clause (skills under-trigger)"
+    ]
+   }
+  ]
+ }
+]

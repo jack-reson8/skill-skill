@@ -17,7 +17,7 @@ def fm(text):
         d[key] = '' if v.strip() in ('>', '|', '>-', '|-') else v.strip()
     return d, text[m.end():]
 
-def audit(sd):
+def audit(sd, collisions=True):
     issues, notes = [], []
     p = os.path.join(sd, 'SKILL.md')
     if not os.path.exists(p): return [f'no SKILL.md in {sd}'], []
@@ -29,7 +29,7 @@ def audit(sd):
     if not desc: issues.append('empty description')
     if len(desc) > 1024: issues.append(f'description {len(desc)} chars > 1024')
     if desc and not re.search(r'(\bwhen\b|whenever|\btrigger|使用|触发|时用)', desc, re.I): notes.append('warn: description has no "Use when…" trigger clause (skills under-trigger)')
-    for root in ROOTS:
+    for root in (ROOTS if collisions else []):
         for other in glob.glob(os.path.join(root, '*', 'SKILL.md')):
             if os.path.dirname(other) != os.path.abspath(sd):
                 om, _ = fm(open(other).read())

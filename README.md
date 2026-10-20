@@ -4,6 +4,10 @@
 
 A Claude skill for writing skills that **actually change what gets generated**, not piles of notes.
 
+> **New: [I audited 899 public Claude skills](reports/2026-10/README.md)** ([中文](reports/2026-10/README.zh-CN.md)). Many never tell the model when to use them; fixes were sent upstream.
+>
+> [![Claude skill health](reports/2026-10/chart.png)](reports/2026-10/README.md)
+
 一个用来写 skill 的 skill：让 skill 在实际生成时真正起作用，而不是堆资料。
 
 ## What it does
@@ -39,6 +43,8 @@ python3 ~/.claude/skills/skill-skill/scripts/skill_audit.py path/to/skill   # or
 
 Average skill health: 92/100 across 6 skills
 ```
+
+Audit any public repo into a report with a chart: `python3 scripts/skill_report.py owner/repo`.
 
 Got a score? Put the badge in your skill's README and share it (`--badge` prints the markdown).
 
