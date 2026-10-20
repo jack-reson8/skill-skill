@@ -1,0 +1,13 @@
+# skill-skill
+
+> Open-source Claude Code skill and Python linter for Claude/Agent Skills. It helps write skills that actually change what the model generates (forcing functions: required artifacts, gates, scripts) and checks SKILL.md files against the Agent Skills specification, printing a 0-100 health score and README badge.
+
+- Repository: https://github.com/jack-reson8/skill-skill
+- Install (Claude Code): `/plugin marketplace add jack-reson8/skill-skill` then `/plugin install skill-skill@skill-skill`
+- Lint: `python3 scripts/skill_audit.py <skill_dir>` (`--all` for ~/.claude/skills, `--badge` for a badge)
+- Report on public repos: `python3 scripts/skill_report.py owner/repo`
+
+## Key facts
+- Spec rules checked: name 1-64 lowercase letters/numbers/single hyphens matching the folder; description 1-1024 characters including when to use the skill.
+- October 2026 audit of 899 public skills: missing "when to use" in 3/20 anthropics/skills, 1/15 obra/superpowers, 846/864 ComposioHQ/awesome-claude-skills; 93 invalid names; official claude-api description 1068 characters (over 1024).
+- Report: https://github.com/jack-reson8/skill-skill/blob/main/reports/2026-10/README.md
