@@ -1,5 +1,7 @@
 # skill-skill
 
+![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)
+
 A Claude skill for writing skills that **actually change what gets generated**, not piles of notes.
 
 一个用来写 skill 的 skill：让 skill 在实际生成时真正起作用，而不是堆资料。
@@ -18,11 +20,27 @@ A Claude skill for writing skills that **actually change what gets generated**, 
 git clone https://github.com/jack-reson8/skill-skill ~/.claude/skills/skill-skill
 ```
 
-## Audit any skill
+## Audit any skill and get a health score
 
 ```bash
-python3 ~/.claude/skills/skill-skill/scripts/skill_audit.py path/to/skill   # or --all for ~/.claude/skills
+python3 ~/.claude/skills/skill-skill/scripts/skill_audit.py path/to/skill   # or --all for ~/.claude/skills, --badge for a README badge
 ```
+
+```
+== bad-skill   15/100  ★☆☆☆☆
+  ✗ name "Bad_Skill" must be lowercase-hyphen
+  ✗ description has no "Use when…" trigger clause
+  ✗ orphan: references/orphan.md is never mentioned in SKILL.md
+  ✗ dangling path: references/missing.md
+  · warn: 4 ALL-CAPS commands — explain the why instead
+
+== pro-motion   100/100  ★★★★★
+  ✓ no blocking issues
+
+Average skill health: 92/100 across 6 skills
+```
+
+Got a score? Put the badge in your skill's README and share it (`--badge` prints the markdown).
 
 No dependencies beyond Python 3. For full eval benchmarks and description optimisation, pair it with Anthropic's `skill-creator`.
 
