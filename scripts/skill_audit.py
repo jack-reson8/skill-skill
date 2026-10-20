@@ -33,7 +33,9 @@ def audit(sd):
         for other in glob.glob(os.path.join(root, '*', 'SKILL.md')):
             if os.path.dirname(other) != os.path.abspath(sd):
                 om, _ = fm(open(other).read())
-                if om and om.get('name') == name: issues.append(f'name collides with {other}')
+                if om and om.get('name') == name:
+                    if om.get('description') == desc: notes.append(f'same skill also installed at {other}')
+                    else: issues.append(f'name collides with {other}')
     # orphans: bundled files never mentioned in SKILL.md won't be read
     for sub in ('references', 'scripts', 'assets'):
         for f in glob.glob(os.path.join(sd, sub, '**', '*'), recursive=True):
@@ -70,7 +72,7 @@ if __name__ == '__main__':
     for sd in targets:
         issues, notes = audit(os.path.abspath(os.path.expanduser(sd)))
         sc = score(issues, notes); stars, badge = card(os.path.basename(sd), sc)
-        print(f'\n== {os.path.basename(sd.rstrip("/"))}   {sc}/100  {stars}'); [print('  ✗', i) for i in issues]; [print('  ·', n) for n in notes]
+        print(f'\n== {os.path.basename(os.path.abspath(sd))}   {sc}/100  {stars}'); [print('  ✗', i) for i in issues]; [print('  ·', n) for n in notes]
         if not issues: print('  ✓ no blocking issues')
         if '--badge' in sys.argv: print('  badge:', badge)
         bad += len(issues); scores.append(sc)
