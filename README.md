@@ -59,6 +59,16 @@ Got a score? Put the badge in your skill's README and share it (`--badge` prints
 
 No dependencies beyond Python 3. For full eval benchmarks and description optimisation, pair it with Anthropic's `skill-creator`.
 
+## FAQ
+
+**Why doesn't Claude use my skill?** Claude decides from the `description` alone. Say what the skill does *and when to use it*, using the phrases your users actually type, and stay under 1,024 characters. `skill_audit.py` flags descriptions that miss this.
+
+**What are the SKILL.md name rules?** A name is 1–64 lowercase letters, numbers and single hyphens, and it must match the parent folder ([Agent Skills spec](https://agentskills.io/specification)).
+
+**How is this different from Anthropic's skill-creator?** skill-creator runs full evals and description optimisation. skill-skill is the fast path: it distils real work into forcing functions and gives a static lint in seconds. Use both.
+
+Project page: https://jack-reson8.github.io/skill-skill/
+
 ## License
 
 MIT
