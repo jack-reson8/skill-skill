@@ -66,5 +66,5 @@ Flags: bad name / folder mismatch, description too long or without a trigger cla
 ## 7 · Publish and get listed (only when the user wants it public)
 
 1. **Gate:** `python3 <this skill's base directory>/scripts/publish_check.py <repo> --scan` must print READY (strict YAML frontmatter, LICENSE + SECURITY.md at the root and in each plugin folder, manifests that agree, no token-like strings in data, scanner score ≥ 80). Fix every ✗ before any PR.
-2. Read `references/publishing.md`, then each target list's CONTRIBUTING, PR template and `.github/workflows` (bots enforce order, file scope, scores). One open PR per list; append further skills to it.
+2. Set the repo up for every agent and keep one copy (`references/publishing.md` → "One skill, every agent", "Keep one copy", "Descriptions in the users' languages"). Then read each target list's CONTRIBUTING, PR template and `.github/workflows` (bots enforce order, file scope, scores). One open PR per list; append further skills to it.
 3. After submitting, run `scripts/pr_triage.py` instead of reading notification mail: fix every ACTION item, hand YOU items to the account owner as one list, and ignore WAIT. Add any new bot failure to `publishing.md` as a row.

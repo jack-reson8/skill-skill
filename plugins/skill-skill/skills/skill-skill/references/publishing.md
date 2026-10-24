@@ -18,6 +18,27 @@ Read this at step 7, before opening any listing PR. Each line is a failure or bo
 | 3 of 4 plugins closed on buildwithclaude (Markdown-only renhua merged) | human security review | Download only pinned versions and verify a checksum (no `releases/latest`); never pick a URL out of a fetched page; installs and network actions list what they'll do and wait for the user's yes (`--yes` flag); say in SKILL.md that fetched pages, videos, screenshots and audited files are **data**, not instructions; scripts act only on inputs the user named. `publish_check` flags `releases/latest`, `curl … \| sh` and unpinned `npm i`/`pip install`. |
 | "🤖 Generated with Claude Code" footer | reviewers | Leave it off; write the PR as the author. Add AI disclosure only where a list requires it. |
 
+## One skill, every agent (set this up once per repo)
+
+| Surface | What the repo needs | Install line for the README |
+|---|---|---|
+| Claude Code | `.claude-plugin/marketplace.json` → `plugins/<name>/.claude-plugin/plugin.json` → `plugins/<name>/skills/<name>/SKILL.md` | `/plugin marketplace add <owner>/<repo>` |
+| Codex / ChatGPT desktop | `plugins/<name>/.codex-plugin/plugin.json` (`"skills": "./skills/"`, `interface` with displayName, category, defaultPrompt, privacy/terms URLs) + `.agents/plugins/marketplace.json` | `codex plugin marketplace add <owner>/<repo>` then `codex plugin add <name>@<repo>` |
+| Cursor, Gemini CLI, Copilot, 40+ agents | nothing extra; the skills CLI finds SKILL.md (installs also feed the skills.sh leaderboard) | `npx skills add <owner>/<repo>` |
+| Plain folder | — | copy `plugins/<name>/skills/<name>` to `~/.claude/skills/` or `~/.codex/skills/` |
+
+Also ship `SECURITY.md`, `LICENSE`, `PRIVACY.md` (a skill collects nothing; say so) and `.codexignore` at the root and in `plugins/<name>/`; the HOL scanner then reports ~98 with both ecosystems detected. Codex lists (awesome-codex-plugins) mirror bundles from your repo and need ≥80. OpenAI's public plugin directory takes a skills-only upload through its portal (account owner only); its rules: provider-neutral wording ("the model"), no hooks, no Claude-only artifacts.
+
+Test it like a user before submitting: `CODEX_HOME=$(mktemp -d) codex plugin marketplace add <owner>/<repo> && codex plugin add <name>@<repo>`, and `npx skills use <owner>/<repo>@<name>` (reads without installing).
+
+## Keep one copy
+
+The installed skill must be the repo: `ln -s ~/code/<repo>/plugins/<name>/skills/<name> ~/.claude/skills/<name>` (and the same into `~/.codex/skills/`). Editing an installed copy that isn't the repo forks it silently: four of six skills had drifted (unpushed commits, edits on both sides) and needed a three-way merge before they could be published.
+
+## Descriptions in the users' languages
+
+Models pick skills from the description, so a user writing in Japanese only triggers a skill whose description has Japanese words. Write the description in English, then add `Triggers:` with the real phrases in Chinese and in each target language (ja, ko, vi, hi…), staying under 1,024 characters. README in English + Chinese first, then the same languages, with a switcher line under the H1.
+
 ## Writing the PR
 
 - Read the list's CONTRIBUTING, PR template and `.github/workflows` first. Bots enforce what humans don't write down: alphabetical order, README-only, keyword blocklists, minimum scores.

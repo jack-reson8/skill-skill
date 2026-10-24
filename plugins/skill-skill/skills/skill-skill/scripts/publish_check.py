@@ -54,7 +54,8 @@ def main():
     rel = lambda p: os.path.relpath(p, root)
 
     skills = [p for p in glob.glob(os.path.join(root, '**', 'SKILL.md'), recursive=True) if '/.git/' not in p and '/node_modules/' not in p]
-    if not skills: block.append('no SKILL.md found')
+    non_skill = not skills and any(os.path.exists(os.path.join(root, f)) for f in ('package.json', 'pyproject.toml', 'server.json', 'Dockerfile'))
+    if not skills: (ok if non_skill else block).append('no SKILL.md — treated as a tool/MCP repo; skill checks skipped' if non_skill else 'no SKILL.md found')
     for p in skills:
         fm = frontmatter(open(p, encoding='utf-8').read())
         if fm is None: block.append(f'{rel(p)}: missing --- frontmatter ---'); continue
@@ -87,8 +88,20 @@ def main():
             if 'strict' in market: warn.append('marketplace.json has root-level "strict" — Claude Code expects it per plugins[] entry')
         except (ValueError, OSError) as e:
             block.append(f'marketplace.json / plugin.json do not parse: {e}')
-    else:
+    elif not non_skill:
         warn.append('no .claude-plugin/marketplace.json — plugin lists (ccplugins, buildwithclaude) and /plugin install need it')
+    if skills and not glob.glob(os.path.join(root, '**', '.codex-plugin', 'plugin.json'), recursive=True):
+        warn.append('no .codex-plugin/plugin.json — Codex can\'t install it as a plugin (see publishing.md "One skill, every agent")')
+    elif skills and not os.path.exists(os.path.join(root, '.agents', 'plugins', 'marketplace.json')):
+        warn.append('no .agents/plugins/marketplace.json — `codex plugin marketplace add owner/repo` won\'t find the plugin')
+    for p in skills:
+        real = os.path.realpath(os.path.dirname(p)); name = os.path.basename(real)
+        for home in ('~/.claude/skills', '~/.codex/skills'):
+            inst = os.path.expanduser(os.path.join(home, name))
+            if os.path.exists(inst) and os.path.realpath(inst) != real:
+                warn.append(f'{inst} is a separate copy, not this repo — symlink it to {rel(os.path.dirname(p))} so they can\'t drift')
+    if skills and not any(re.search(r'[\u3040-\u30ff\uac00-\ud7af]', open(p, encoding='utf-8').read()[:3000]) for p in skills):
+        warn.append('description has no Japanese/Korean trigger words — users writing in those languages may not trigger it')
 
     for p in glob.glob(os.path.join(root, '**', '*'), recursive=True):
         if '/.git/' in p or not p.endswith(DATA_EXT) or not os.path.isfile(p) or os.path.getsize(p) > 20_000_000: continue
