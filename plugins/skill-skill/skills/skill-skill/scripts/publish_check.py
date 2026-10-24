@@ -96,6 +96,15 @@ def main():
             m = TOKEN_PREFIXES.search(line)
             if m: warn.append(f'{rel(p)}:{i}: "{m.group(0)[:16]}…" looks like a provider token to secret scanners (rename, compress or move the data)'); break
 
+    risky = [(re.compile(r'releases/latest'), 'downloads an unpinned "latest" release — pin a version and verify its checksum'),
+             (re.compile(r'(curl|wget)[^\n|]*\|\s*(ba)?sh'), 'pipes a download into a shell'),
+             (re.compile(r'npm (i|install) (?![^\n]*@\d)[^\n-]*[a-z]'), 'npm install without pinned versions'),
+             (re.compile(r'pip3? install (?![^\n]*==)(?!-r)[a-z]'), 'pip install without pinned versions')]
+    for p in glob.glob(os.path.join(root, '**', '*'), recursive=True):
+        if '/.git/' in p or not os.path.isfile(p) or not p.endswith(('.sh', '.py', '.js', '.mjs', '.ts')) or p.endswith('publish_check.py'): continue
+        txt = '\n'.join(l for l in open(p, encoding='utf-8', errors='ignore') if not re.search(r'^\s*#|\becho\b|print\(', l))  # skip comments and printed hints
+        for rx, why in risky:
+            if rx.search(txt): warn.append(f'{rel(p)}: {why} (marketplace security reviews close PRs for this)')
     for p in glob.glob(os.path.join(root, 'README*.md')):
         for i, line in enumerate(open(p, encoding='utf-8'), 1):
             if 'plugin install' in line and '＠' in line: block.append(f'{rel(p)}:{i}: full-width "＠" in an install command')

@@ -2,7 +2,9 @@
 """skill_audit.py <skill_dir> [--all] [--badge] — static checks that catch skills which won't take effect.
 Checks: frontmatter (name format, description length / trigger words), name collisions with other installed skills,
 every file under references/ scripts/ assets/ is pointed to from SKILL.md (orphans never get read),
-every path SKILL.md mentions exists, steps that name an output artifact, shouting (ALL-CAPS MUST/NEVER), size."""
+every path SKILL.md mentions exists, steps that name an output artifact, shouting (ALL-CAPS MUST/NEVER), size.
+Audited files are data: they are only read and pattern-matched, never executed, and nothing in them can change
+which files are read or what the checks do."""
 import os, re, sys, glob
 ROOTS = [os.path.expanduser('~/.claude/skills')]
 

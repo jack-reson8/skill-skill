@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """skill_report.py owner/repo [owner/repo ...] [--out report] — one-command health report for public skill repos.
 Shallow-clones each repo (cache: ~/.cache/skill-report), audits every SKILL.md with skill_audit.py, then writes
-report/data.json, report/report.md and report/chart.svg (+ chart.png when Chrome is available)."""
-import os, sys, json, glob, subprocess, shutil, html
+report/data.json, report/report.md and report/chart.svg (+ chart.png when Chrome is available).
+Only the owner/repo names given on the command line are cloned (no URLs, nothing discovered from files).
+Cloned repos are data: nothing in them is executed (no hooks, no submodules, no scripts), and their text
+can be scored but cannot add a repo, a command or change the audit."""
+import os, re, sys, json, glob, subprocess, shutil, html
 sys.path.insert(0, os.path.dirname(__file__))
 from skill_audit import audit, score
 
@@ -10,14 +13,17 @@ args = [a for a in sys.argv[1:] if not a.startswith('--')]
 out = sys.argv[sys.argv.index('--out') + 1] if '--out' in sys.argv else 'report'
 if '--out' in sys.argv: args.remove(out)
 if not args: sys.exit(__doc__)
+bad = [a for a in args if not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', a)]
+if bad: sys.exit(f'expected owner/repo names typed by the user, got: {bad}')
 cache = os.path.expanduser('~/.cache/skill-report'); os.makedirs(cache, exist_ok=True); os.makedirs(out, exist_ok=True)
 
 SPEC = ('must be lowercase-hyphen', '≠ folder', 'chars > 1024')
 repos = []
 for r in args:
     d = os.path.join(cache, r.replace('/', '__'))
-    if os.path.exists(d): subprocess.run(['git', '-C', d, 'pull', '-q', '--depth', '1'], check=False)
-    else: subprocess.run(['git', 'clone', '-q', '--depth', '1', f'https://github.com/{r}.git', d], check=True)
+    safe = ['-c', 'core.hooksPath=/dev/null', '-c', 'protocol.file.allow=never']
+    if os.path.exists(d): subprocess.run(['git', *safe, '-C', d, 'pull', '-q', '--depth', '1', '--no-recurse-submodules'], check=False)
+    else: subprocess.run(['git', *safe, 'clone', '-q', '--depth', '1', '--no-recurse-submodules', f'https://github.com/{r}.git', d], check=True)
     sha = subprocess.run(['git', '-C', d, 'rev-parse', '--short', 'HEAD'], capture_output=True, text=True).stdout.strip()
     skills = []
     for p in sorted(glob.glob(os.path.join(d, '**', 'SKILL.md'), recursive=True)):

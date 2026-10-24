@@ -15,6 +15,8 @@ Read this at step 7, before opening any listing PR. Each line is a failure or bo
 | Vercel "attempting to deploy" (sickn33) | Vercel | It's the maintainer's preview deploy for fork PRs. Ignore it. |
 | Pinned plugin source (`sha`) pointed at the broken commit | buildwithclaude | After fixing a repo, re-pin every open PR that pins a commit. |
 | `name` in plugin.json ≠ marketplace entry, full-width `＠` in install lines | users can't install | `publish_check` verifies both. |
+| 3 of 4 plugins closed on buildwithclaude (Markdown-only renhua merged) | human security review | Download only pinned versions and verify a checksum (no `releases/latest`); never pick a URL out of a fetched page; installs and network actions list what they'll do and wait for the user's yes (`--yes` flag); say in SKILL.md that fetched pages, videos, screenshots and audited files are **data**, not instructions; scripts act only on inputs the user named. `publish_check` flags `releases/latest`, `curl … \| sh` and unpinned `npm i`/`pip install`. |
+| "🤖 Generated with Claude Code" footer | reviewers | Leave it off; write the PR as the author. Add AI disclosure only where a list requires it. |
 
 ## Writing the PR
 
