@@ -45,7 +45,7 @@ footer{margin-top:44px;font-size:14px;color:var(--muted)}
   <button id="t-url" role="tab" aria-selected="false">GitHub folder link</button>
 </div>
 <div id="p-paste"><textarea id="md" spellcheck="false" placeholder="---&#10;name: my-skill&#10;description: What it does. Use when the user asks to …&#10;---&#10;&#10;# Steps …"></textarea></div>
-<div id="p-url" hidden><input id="url" type="url" placeholder="https://github.com/anthropics/skills/tree/main/skills/pdf"><p class="hint">Linking the folder also checks for reference files nothing points to and paths that don't exist.</p></div>
+<div id="p-url" hidden><input id="url" type="url" placeholder="https://github.com/anthropics/skills/tree/main/skills/pdf"><p class="hint">A repo link lists its skills. Linking the folder also checks for reference files nothing points to and paths that don't exist.</p></div>
 <div class="row"><button class="go" id="run">Check</button><span class="hint" id="status"></span></div>
 
 <section id="out" aria-live="polite"></section>
@@ -104,13 +104,21 @@ function audit(text, folder, files) {
 }
 
 async function fromGitHub(u) {
-  const m = u.trim().match(/github\.com\/([^/]+)\/([^/]+)\/(?:tree|blob)\/([^/]+)\/?(.*?)(?:\/SKILL\.md)?\/?$/);
-  if (!m) throw new Error('Use a link like https://github.com/owner/repo/tree/main/path/to/skill');
-  const [, owner, repo, ref, dir] = m;
-  const tree = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/trees/${ref}?recursive=1`).then(r => { if (!r.ok) throw new Error(`GitHub said ${r.status} (private repo, wrong branch, or rate limit)`); return r.json(); });
-  const pre = dir ? dir.replace(/\/$/, '') + '/' : '';
+  const m = u.trim().replace(/[?#].*$/, '').match(/github\.com\/([^/]+)\/([^/]+?)(?:\.git)?(?:\/(?:tree|blob)\/([^/]+)\/?(.*?))?(?:\/SKILL\.md)?\/?$/);
+  if (!m) throw new Error('Use a GitHub link: a repo, or a skill folder like https://github.com/owner/repo/tree/main/path/to/skill');
+  const gh = url => fetch(url).then(r => { if (!r.ok) throw new Error(`GitHub said ${r.status} (private repo, wrong branch, or rate limit)`); return r.json(); });
+  let [, owner, repo, ref, dir] = m;
+  if (!ref) ref = (await gh(`https://api.github.com/repos/${owner}/${repo}`)).default_branch;  // plain repo link
+  const tree = await gh(`https://api.github.com/repos/${owner}/${repo}/git/trees/${ref}?recursive=1`);
+  let pre = dir ? dir.replace(/\/$/, '') + '/' : '';
+  if (!tree.tree.some(t => t.path === pre + 'SKILL.md')) {
+    // not a skill folder: look for skills below it
+    const found = tree.tree.filter(t => t.type === 'blob' && t.path.startsWith(pre) && t.path.endsWith('/SKILL.md')).map(t => t.path.slice(0, -9));
+    if (!found.length) throw new Error('No SKILL.md in that repo or folder');
+    if (found.length > 1) return { choices: found.map(d => `https://github.com/${owner}/${repo}/tree/${ref}/${d}`) };
+    pre = found[0] + '/'; dir = found[0];
+  }
   const paths = tree.tree.filter(t => t.type === 'blob' && t.path.startsWith(pre)).map(t => t.path.slice(pre.length));
-  if (!paths.includes('SKILL.md')) throw new Error('No SKILL.md in that folder');
   const raw = p => fetch(`https://raw.githubusercontent.com/${owner}/${repo}/${ref}/${pre}${p}`).then(r => r.text());
   const textual = paths.filter(p => p !== 'SKILL.md' && /\.(md|py|sh|js|ts|mjs|cjs|swift)$/.test(p)).slice(0, 60);
   const [skill, ...texts] = await Promise.all([raw('SKILL.md'), ...textual.map(raw)]);
@@ -136,7 +144,9 @@ $('run').onclick = async () => {
   $('status').textContent = '';
   try {
     if (mode === 'paste') { const t = $('md').value; if (!t.trim()) { $('status').textContent = 'Paste a SKILL.md first'; return; } render(audit(t, null, null)); }
-    else { $('status').textContent = 'Reading from GitHub…'; const g = await fromGitHub($('url').value); render(audit(g.skill, g.folder, g.files)); $('status').textContent = ''; }
+    else { $('status').textContent = 'Reading from GitHub…'; const g = await fromGitHub($('url').value); $('status').textContent = '';
+      if (g.choices) { $('out').innerHTML = `<p class="hint">${g.choices.length} skills here. Pick one:</p><ul>${g.choices.slice(0, 200).map(c => `<li><a href="?url=${encodeURIComponent(c)}">${esc(c.split('/').slice(-1)[0])}</a></li>`).join('')}</ul>`; return; }
+      render(audit(g.skill, g.folder, g.files)); }
   } catch (e) { $('status').textContent = e.message; }
 };
 const q = new URLSearchParams(location.search).get('url');
