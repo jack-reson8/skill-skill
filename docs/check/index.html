@@ -1,0 +1,144 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Skill health check: lint any SKILL.md in your browser</title>
+<meta name="description" content="Paste a SKILL.md or a GitHub link to a skill folder and get a 0-100 health score against the Agent Skills spec, plus a README badge. Free, runs in your browser, nothing is uploaded.">
+<link rel="canonical" href="https://jack-reson8.github.io/skill-skill/check/">
+<meta property="og:title" content="Skill health check"><meta property="og:description" content="Will your agent actually load this skill? Paste a SKILL.md, get a score and a badge.">
+<meta property="og:image" content="https://raw.githubusercontent.com/jack-reson8/skill-skill/main/docs/share.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--ink:#16181d;--muted:#5f6571;--line:#e3e5ea;--soft:#f4f5f7;--accent:#0FA89A;--bad:#c4302b;--warn:#a86b00}
+@media (prefers-color-scheme:dark){:root{--ink:#eef0f3;--muted:#9aa1ac;--line:#2c3038;--soft:#1b1e24;--accent:#2fd0bf;--bad:#ff7b75;--warn:#e7b04f;color-scheme:dark}body{background:#121418}}
+body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:#fff}
+main{max-width:780px;margin:0 auto;padding:44px max(18px,env(safe-area-inset-left,0px)) 64px}
+.k{font:600 12px ui-monospace,Menlo,monospace;letter-spacing:.08em;color:var(--muted)}
+h1{font-size:clamp(28px,5vw,38px);line-height:1.15;margin:8px 0 10px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--accent)}
+.lead{color:var(--muted);margin:0 0 26px;max-width:62ch}
+.tabs{display:flex;gap:6px;margin-bottom:10px}
+.tabs button{font:600 14px inherit;font-family:inherit;border:1px solid var(--line);background:none;color:var(--muted);padding:7px 14px;border-radius:999px;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--ink);color:var(--soft);border-color:var(--ink)}
+textarea,input[type=url]{width:100%;box-sizing:border-box;font:13.5px/1.55 ui-monospace,Menlo,monospace;border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--soft);color:var(--ink)}
+textarea{min-height:220px;resize:vertical}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.go{font:700 15px inherit;font-family:inherit;background:var(--accent);color:#fff;border:0;border-radius:12px;padding:11px 22px;cursor:pointer}
+.go:focus-visible,.tabs button:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 45%,transparent);outline-offset:2px}
+.hint{font-size:13px;color:var(--muted)}
+#out{margin-top:30px;display:grid;gap:16px}
+.score{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.score b{font-size:64px;line-height:1;font-variant-numeric:tabular-nums}
+.score span{font-size:22px;color:var(--muted)}
+ul{margin:0;padding-left:0;list-style:none;display:grid;gap:6px}
+li{padding:9px 12px;border-radius:10px;background:var(--soft);font-size:14.5px}
+li.i{border-left:4px solid var(--bad)} li.w{border-left:4px solid var(--warn)} li.n{border-left:4px solid var(--line);color:var(--muted)} li.ok{border-left:4px solid var(--accent)}
+pre{background:var(--soft);border-radius:12px;padding:12px 14px;overflow-x:auto;font-size:13px;margin:0}
+.badge img{vertical-align:middle}
+h2{font-size:20px;margin:36px 0 8px}
+a{color:var(--accent)}
+footer{margin-top:44px;font-size:14px;color:var(--muted)}
+</style></head><body><main>
+<div class="k">SKILL HEALTH CHECK · RUNS IN YOUR BROWSER</div>
+<h1>Will your agent <em>actually load</em> this skill?</h1>
+<p class="lead">Agents pick a skill from its description alone. Paste a SKILL.md, or link a skill folder on GitHub, and get a 0–100 score against the <a href="https://agentskills.io/specification">Agent Skills spec</a>. Nothing is uploaded; GitHub links are read straight from GitHub.</p>
+
+<div class="tabs" role="tablist">
+  <button id="t-paste" role="tab" aria-selected="true">Paste SKILL.md</button>
+  <button id="t-url" role="tab" aria-selected="false">GitHub folder link</button>
+</div>
+<div id="p-paste"><textarea id="md" spellcheck="false" placeholder="---&#10;name: my-skill&#10;description: What it does. Use when the user asks to …&#10;---&#10;&#10;# Steps …"></textarea></div>
+<div id="p-url" hidden><input id="url" type="url" placeholder="https://github.com/anthropics/skills/tree/main/skills/pdf"><p class="hint">Linking the folder also checks for reference files nothing points to and paths that don't exist.</p></div>
+<div class="row"><button class="go" id="run">Check</button><span class="hint" id="status"></span></div>
+
+<section id="out" aria-live="polite"></section>
+
+<h2>What it checks</h2>
+<p class="hint">Name is lowercase-hyphen and matches the folder · description exists, stays under 1,024 characters and says when to use the skill · steps produce or check something · not too many ALL-CAPS commands · body under 500 lines · with a folder link: no orphan reference files, no dangling paths. Each blocking issue costs 15 points, each warning 5. Same rules as <code>skill_audit.py</code> in <a href="https://github.com/jack-reson8/skill-skill">skill-skill</a>.</p>
+<footer>MIT · <a href="https://github.com/jack-reson8/skill-skill">skill-skill</a> · part of <a href="https://github.com/jack-reson8/copy-that">Copy That</a> · <a href="../">899-skill audit</a></footer>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+let mode = 'paste';
+for (const m of ['paste', 'url']) $('t-' + m).onclick = () => { mode = m; for (const n of ['paste', 'url']) { $('t-' + n).setAttribute('aria-selected', n === m); $('p-' + n).hidden = n !== m; } };
+
+function fm(text) {
+  const m = text.replace(/\r\n/g, '\n').match(/^---\n([\s\S]*?)\n---\n?/);
+  if (!m) return [null, text];
+  const d = {}; let key = null;
+  for (const line of m[1].split('\n')) {
+    if (/^[ \t]/.test(line) && key) { d[key] = (d[key] + ' ' + line.trim()).trim(); continue; }
+    const i = line.indexOf(':'); if (i < 0) continue;
+    key = line.slice(0, i).trim(); let v = line.slice(i + 1).trim();
+    if (['>', '|', '>-', '|-'].includes(v)) v = '';
+    d[key] = v.replace(/^(["'])([\s\S]*)\1$/, '$2');
+  }
+  return [d, text.slice(m[0].length)];
+}
+
+function audit(text, folder, files) {
+  const issues = [], warns = [], notes = [];
+  const [meta, body] = fm(text);
+  if (!meta) return { issues: ['missing YAML frontmatter (--- name / description ---)'], warns, notes };
+  const name = meta.name || '', desc = meta.description || '';
+  if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(name)) issues.push(`name "${name}" must be lowercase letters, numbers and single hyphens`);
+  if (folder && name !== folder) issues.push(`name "${name}" ≠ folder "${folder}"`);
+  if (!desc) issues.push('empty description');
+  if ([...desc].length > 1024) issues.push(`description is ${[...desc].length} characters, over the 1,024 limit (some agents won't load it)`);
+  if (desc && !/(\bwhen\b|whenever|\btrigger|使用|触发|时用)/i.test(desc)) warns.push('description never says when to use the skill, so agents under-trigger it');
+  const lines = body.split('\n');
+  const produce = (body.match(/\b(write|save|output|produce|render|run|check)\b|→|写|输出|生成|检查|运行|保存|改写/gi) || []).length;
+  const shout = (body.match(/\b(MUST|NEVER|ALWAYS)\b/g) || []).length;
+  if (produce === 0) warns.push('no step produces an artifact or runs a check, so the skill may not change the output');
+  if (shout > 3) warns.push(`${shout} ALL-CAPS commands; explain the why instead`);
+  if (lines.length > 500) warns.push('SKILL.md body over 500 lines; move detail into references/ with pointers');
+  notes.push(`${lines.length} body lines, ${(body.match(/^##+ /gm) || []).length} sections, ${produce} action words, ${[...desc].length}-char description`);
+  if (files) {
+    const corpus = text + files.texts.join('\n');
+    const entries = files.paths.filter(p => /^references\/[^/]+\.md$/.test(p) || /^scripts\/[^/]+\.(py|sh|js|ts|mjs|cjs|swift)$/.test(p));
+    const orphans = entries.filter(p => { const b = p.split('/').pop(), stem = b.replace(/\.[^.]+$/, ''); const others = corpus.replace(files.byPath[p] || '', ''); return b !== '__init__.py' && !others.includes(b) && !new RegExp('\\b' + stem.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b').test(others); });
+    if (orphans.length) issues.push(`${orphans.length} file(s) nothing points to, so they never get read: ${orphans.slice(0, 5).join(', ')}${orphans.length > 5 ? ' …' : ''}`);
+    const prose = text.replace(/```[\s\S]*?```/g, '').split('\n').filter(l => !/e\.g\.|example|such as|for instance|例如|比如/i.test(l)).join('\n');
+    const mentioned = [...new Set([...prose.matchAll(/`((?:references|scripts|assets)\/[\w./-]+)`/g)].map(m => m[1]))];
+    const dangling = mentioned.filter(r => !files.paths.some(p => p === r || p.startsWith(r.replace(/\/$/, '') + '/')));
+    if (dangling.length) issues.push(`${dangling.length} path(s) mentioned but missing: ${dangling.slice(0, 5).join(', ')}`);
+  } else notes.push('paste mode: orphan files and dangling paths are not checked (use a GitHub folder link)');
+  return { issues, warns, notes };
+}
+
+async function fromGitHub(u) {
+  const m = u.trim().match(/github\.com\/([^/]+)\/([^/]+)\/(?:tree|blob)\/([^/]+)\/?(.*?)(?:\/SKILL\.md)?\/?$/);
+  if (!m) throw new Error('Use a link like https://github.com/owner/repo/tree/main/path/to/skill');
+  const [, owner, repo, ref, dir] = m;
+  const tree = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/trees/${ref}?recursive=1`).then(r => { if (!r.ok) throw new Error(`GitHub said ${r.status} (private repo, wrong branch, or rate limit)`); return r.json(); });
+  const pre = dir ? dir.replace(/\/$/, '') + '/' : '';
+  const paths = tree.tree.filter(t => t.type === 'blob' && t.path.startsWith(pre)).map(t => t.path.slice(pre.length));
+  if (!paths.includes('SKILL.md')) throw new Error('No SKILL.md in that folder');
+  const raw = p => fetch(`https://raw.githubusercontent.com/${owner}/${repo}/${ref}/${pre}${p}`).then(r => r.text());
+  const textual = paths.filter(p => p !== 'SKILL.md' && /\.(md|py|sh|js|ts|mjs|cjs|swift)$/.test(p)).slice(0, 60);
+  const [skill, ...texts] = await Promise.all([raw('SKILL.md'), ...textual.map(raw)]);
+  const byPath = Object.fromEntries(textual.map((p, i) => [p, texts[i]]));
+  return { skill, folder: (dir || repo).replace(/\/$/, '').split('/').pop(), files: { paths, texts, byPath } };
+}
+
+const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+function render(r) {
+  const sc = Math.max(0, 100 - 15 * r.issues.length - 5 * r.warns.length);
+  const color = sc >= 90 ? 'brightgreen' : sc >= 70 ? 'yellow' : 'red';
+  const img = `https://img.shields.io/badge/skill%20health-${sc}%2F100-${color}`;
+  const md = `[![skill health](${img})](https://jack-reson8.github.io/skill-skill/check/)`;
+  const verdict = sc >= 90 ? 'Agents should find and load this one.' : sc >= 70 ? 'Loads, but agents may skip it.' : 'Agents will likely miss or reject this skill.';
+  $('out').innerHTML = `<div class="score"><b>${sc}</b><span>/100 · ${verdict}</span></div>
+    <ul>${r.issues.map(i => `<li class="i">✗ ${esc(i)}</li>`).join('')}${r.warns.map(w => `<li class="w">! ${esc(w)}</li>`).join('')}${!r.issues.length && !r.warns.length ? '<li class="ok">✓ No blocking issues, no warnings</li>' : ''}${r.notes.map(n => `<li class="n">${esc(n)}</li>`).join('')}</ul>
+    <div class="badge"><img src="${img}" alt="skill health ${sc}/100"> <span class="hint">Add it to your README:</span></div>
+    <pre id="badge">${esc(md)}</pre><div class="row"><button class="go" id="copy">Copy badge</button><span class="hint" id="copied"></span></div>`;
+  $('copy').onclick = () => navigator.clipboard.writeText(md).then(() => $('copied').textContent = 'Copied').catch(() => $('copied').textContent = 'Select the text above and copy it');
+}
+
+$('run').onclick = async () => {
+  $('status').textContent = '';
+  try {
+    if (mode === 'paste') { const t = $('md').value; if (!t.trim()) { $('status').textContent = 'Paste a SKILL.md first'; return; } render(audit(t, null, null)); }
+    else { $('status').textContent = 'Reading from GitHub…'; const g = await fromGitHub($('url').value); render(audit(g.skill, g.folder, g.files)); $('status').textContent = ''; }
+  } catch (e) { $('status').textContent = e.message; }
+};
+const q = new URLSearchParams(location.search).get('url');
+if (q) { $('t-url').click(); $('url').value = q; $('run').click(); }
+</script></body></html>
