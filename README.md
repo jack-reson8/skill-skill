@@ -33,6 +33,15 @@ Or as a plain skill folder:
 git clone https://github.com/jack-reson8/skill-skill /tmp/skill-skill && cp -R /tmp/skill-skill/plugins/skill-skill/skills/skill-skill ~/.claude/skills/
 ```
 
+**Codex** (CLI or the ChatGPT desktop app):
+
+```bash
+codex plugin marketplace add jack-reson8/skill-skill
+codex plugin add skill-skill@skill-skill
+```
+
+Or copy `plugins/skill-skill/skills/skill-skill` into `~/.codex/skills/`. The skill follows the open [Agent Skills](https://agentskills.io) standard, so it works in Claude Code, Codex and any agent that reads SKILL.md.
+
 ## Audit any skill and get a health score
 
 ```bash
