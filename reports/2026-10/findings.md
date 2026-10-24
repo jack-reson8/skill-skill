@@ -28,7 +28,7 @@
 - `composio-skills/apollo-automation`: name "Apollo Automation" must be lowercase-hyphen; name "Apollo Automation" ≠ folder "apollo-automation"
 - `composio-skills/ashby-automation`: name "Ashby Automation" must be lowercase-hyphen; name "Ashby Automation" ≠ folder "ashby-automation"
 - `composio-skills/attio-automation`: name "Attio Automation" must be lowercase-hyphen; name "Attio Automation" ≠ folder "attio-automation"
-- …and 87 more (see data.json)
+- …and 87 more (see data.json.gz)
 
 
 Reproduce: `python3 plugins/skill-skill/skills/skill-skill/scripts/skill_report.py anthropics/skills obra/superpowers ComposioHQ/awesome-claude-skills`

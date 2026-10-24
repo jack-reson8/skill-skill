@@ -27,4 +27,4 @@ python3 ~/.claude/skills/skill-skill/scripts/skill_audit.py --all --badge   # �
 python3 ~/.claude/skills/skill-skill/scripts/skill_report.py owner/repo     # 任意公开仓库 → 报告 + 图表
 ```
 
-每个 skill 的详细问题见 [findings.md](findings.md)，原始数据见 [data.json](data.json)。分数只是静态检查，不代表一个 skill 好不好用。审计也可能判错，欢迎提 issue 和 PR。
+每个 skill 的详细问题见 [findings.md](findings.md)，原始数据见 [data.json.gz](data.json.gz)（gzip 压缩的 JSON）。分数只是静态检查，不代表一个 skill 好不好用。审计也可能判错，欢迎提 issue 和 PR。

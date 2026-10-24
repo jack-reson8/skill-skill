@@ -27,4 +27,4 @@ python3 ~/.claude/skills/skill-skill/scripts/skill_audit.py --all --badge   # yo
 python3 ~/.claude/skills/skill-skill/scripts/skill_report.py owner/repo     # any public repo → report + chart
 ```
 
-Per-skill findings: [findings.md](findings.md) · raw data: [data.json](data.json). Scores are a static lint, not a judgment of how useful a skill is. The audit can be wrong; issues and PRs are welcome.
+Per-skill findings: [findings.md](findings.md) · raw data: [data.json.gz](data.json.gz) (gzip-compressed JSON). Scores are a static lint, not a judgment of how useful a skill is. The audit can be wrong; issues and PRs are welcome.
