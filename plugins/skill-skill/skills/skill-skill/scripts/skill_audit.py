@@ -25,6 +25,23 @@ def audit(sd, collisions=True):
     if not os.path.exists(p): return [f'no SKILL.md in {sd}'], []
     text = open(p).read(); meta, body = fm(text)
     if not meta: return ['missing YAML frontmatter'], []
+    # The lightweight metadata reader cannot validate YAML syntax (e.g. a bare colon).
+    # Keep stdlib-only use possible, but disclose the reduced validation coverage.
+    try:
+        import yaml
+    except ImportError:
+        notes.append('warn: YAML syntax not validated; install PyYAML for structural validation')
+    else:
+        try:
+            parsed = yaml.safe_load(re.match(r'---\n(.*?)\n---\n', text, re.S).group(1))
+        except yaml.YAMLError as exc:
+            return [f'invalid YAML frontmatter: {exc}'], notes
+        if not isinstance(parsed, dict):
+            return ['YAML frontmatter must be a mapping'], notes
+        for field in ('name', 'description'):
+            if not isinstance(parsed.get(field), str):
+                return [f'YAML {field} must be a string'], notes
+        meta.update({field: parsed[field] for field in ('name', 'description')})
     name, desc = meta.get('name', ''), meta.get('description', '')
     if not re.fullmatch(r'[a-z0-9]+(-[a-z0-9]+)*', name): issues.append(f'name "{name}" must be lowercase-hyphen')
     if name != os.path.basename(sd.rstrip('/')): issues.append(f'name "{name}" ≠ folder "{os.path.basename(sd)}"')
@@ -33,8 +50,20 @@ def audit(sd, collisions=True):
     if desc and not re.search(r'(\bwhen\b|whenever|\btrigger|使用|触发|时用)', desc, re.I): notes.append('warn: description has no "Use when…" trigger clause (skills under-trigger)')
     for root in (ROOTS if collisions else []):
         for other in glob.glob(os.path.join(root, '*', 'SKILL.md')):
-            if os.path.dirname(other) != os.path.abspath(sd):
-                om, _ = fm(open(other).read())
+            if os.path.realpath(os.path.dirname(other)) != os.path.realpath(sd):
+                other_text = open(other).read()
+                om, _ = fm(other_text)
+                try:
+                    import yaml
+                    match = re.match(r'---\n(.*?)\n---\n', other_text, re.S)
+                    if match:
+                        parsed_other = yaml.safe_load(match.group(1))
+                        if isinstance(parsed_other, dict): om = parsed_other
+                except (ImportError, ValueError):
+                    pass
+                except Exception:
+                    # A malformed unrelated installation must not crash this audit.
+                    pass
                 if om and om.get('name') == name:
                     if om.get('description') == desc: notes.append(f'same skill also installed at {other}')
                     else: issues.append(f'name collides with {other}')

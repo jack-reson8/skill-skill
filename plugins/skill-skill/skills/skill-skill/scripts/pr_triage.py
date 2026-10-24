@@ -10,6 +10,7 @@ Uses `gh` (logged in). Known bot messages are classified so you don't chase nois
 import json, subprocess, sys
 from concurrent.futures import ThreadPoolExecutor
 
+BOT_HINTS = ('qodo', 'coderabbit', 'copilot', 'sourcery', 'gemini-code-assist', 'codeant', 'greptile')  # review apps whose login lacks [bot]
 RULES = [  # (substring in a bot comment or check name, bucket, what to do)
     ('ai-plugin-scanner', 'ACTION', 'Centralized plugin scan below 80: reproduce with the pinned plugin-scanner version, fix findings (SECURITY.md, plugin LICENSE, token-like strings in data), push, comment asking for a re-scan.'),
     ('centralized scan', 'ACTION', 'Centralized plugin scan below 80: reproduce with the pinned plugin-scanner version, fix findings, push, ask for a re-scan.'),
@@ -35,8 +36,9 @@ def one(item):
     labels = [l['name'] for l in d['labels']]
     failing = [c.get('name') or c.get('context') for c in d.get('statusCheckRollup') or [] if str(c.get('conclusion') or c.get('state')).upper() in ('FAILURE', 'ERROR')]
     others = [c for c in d['comments'] if c['author']['login'] != me]
-    humans = [c for c in others if '[bot]' not in c['author']['login'] and c['author']['login'] not in ('github-actions', 'vercel', 'netlify')]
-    reviews = [r for r in d['reviews'] if r['state'] in ('CHANGES_REQUESTED', 'COMMENTED') and r['body']]
+    is_bot = lambda login: '[bot]' in login or login in ('github-actions', 'vercel', 'netlify') or any(k in login for k in BOT_HINTS)
+    humans = [c for c in others if not is_bot(c['author']['login'])]
+    reviews = [r for r in d['reviews'] if r['state'] in ('CHANGES_REQUESTED', 'COMMENTED') and r['body'] and not is_bot(r['author']['login'])]
     text = ' '.join([c['body'] for c in others] + failing + labels).lower()
     bucket, why = 'WAIT', 'waiting for a maintainer'
     if d['mergeable'] == 'CONFLICTING': bucket, why = 'ACTION', 'merge conflict: rebase the branch on the base branch and push'
