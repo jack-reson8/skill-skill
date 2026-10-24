@@ -1,6 +1,6 @@
 ---
 name: skill-skill
-description: Write, upgrade or audit a Claude skill so it actually changes what gets generated — not a pile of notes. Use whenever the user wants to create a skill, turn a conversation / workflow / methodology into a skill, "沉淀进 skill", 写 skill, 改 skill, 优化 skill, rename a skill, add research or lessons to a skill, or asks why a skill isn't taking effect. Covers distilling from real work (corrections, rejections, accepted outputs), forcing functions (required artifacts, gates, checklists, scripts), descriptions that trigger, naming, a static audit script and a quick with/without effect test.
+description: Write, upgrade or audit a Claude skill so it actually changes what gets generated — not a pile of notes. Use whenever the user wants to create a skill, turn a conversation / workflow / methodology into a skill, "沉淀进 skill", 写 skill, 改 skill, 优化 skill, rename a skill, add research or lessons to a skill, asks why a skill isn't taking effect, or wants to publish a skill / get it listed in awesome lists and plugin marketplaces (发布 skill, 提 PR 收录, 仓库机器人报错). Covers distilling from real work (corrections, rejections, accepted outputs), forcing functions (required artifacts, gates, checklists, scripts), descriptions that trigger, naming, a static audit script, a quick with/without effect test, and a publish preflight + PR triage for listings.
 ---
 
 # Skill · skill
@@ -60,3 +60,9 @@ Flags: bad name / folder mismatch, description too long or without a trigger cla
 - Every new rejection / acceptance → one line in `lessons.md` and, if it recurs, a check or a gate.
 - After an edit, rerun the audit; show the user the diff summary, not the whole file.
 - Prune what never fires in effect tests. Rename only with the collision check; update every path in SKILL.md.
+
+## 7 · Publish and get listed (only when the user wants it public)
+
+1. **Gate:** `python3 <this skill's base directory>/scripts/publish_check.py <repo> --scan` must print READY (strict YAML frontmatter, LICENSE + SECURITY.md at the root and in each plugin folder, manifests that agree, no token-like strings in data, scanner score ≥ 80). Fix every ✗ before any PR.
+2. Read `references/publishing.md`, then each target list's CONTRIBUTING, PR template and `.github/workflows` (bots enforce order, file scope, scores). One open PR per list; append further skills to it.
+3. After submitting, run `scripts/pr_triage.py` instead of reading notification mail: fix every ACTION item, hand YOU items to the account owner as one list, and ignore WAIT. Add any new bot failure to `publishing.md` as a row.
