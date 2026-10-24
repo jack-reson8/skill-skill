@@ -1,5 +1,7 @@
 # skill-skill
 
+English | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Tiếng Việt](README.vi.md) | [हिन्दी](README.hi.md)
+
 ![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)
 
 A Claude skill for writing skills that **actually change what gets generated**, not piles of notes.
@@ -7,8 +9,6 @@ A Claude skill for writing skills that **actually change what gets generated**, 
 > **New: [I audited 899 public Claude skills](reports/2026-10/README.md)** ([中文](reports/2026-10/README.zh-CN.md)). Many never tell the model when to use them; fixes were sent upstream.
 >
 > [![Claude skill health](reports/2026-10/chart.png)](reports/2026-10/README.md)
-
-一个用来写 skill 的 skill：让 skill 在实际生成时真正起作用，而不是堆资料。
 
 ## What it does
 
@@ -41,6 +41,12 @@ codex plugin add skill-skill@skill-skill
 ```
 
 Or copy `plugins/skill-skill/skills/skill-skill` into `~/.codex/skills/`. The skill follows the open [Agent Skills](https://agentskills.io) standard, so it works in Claude Code, Codex and any agent that reads SKILL.md.
+
+**Other agents** (Cursor, Gemini CLI, GitHub Copilot and other agents supported by the skills CLI):
+
+```bash
+npx skills add jack-reson8/skill-skill
+```
 
 ## Audit any skill and get a health score
 
