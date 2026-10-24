@@ -2,6 +2,8 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md) | 日本語 | [한국어](README.ko.md) | [Tiếng Việt](README.vi.md) | [हिन्दी](README.hi.md)
 
+<p align="center"><img src="docs/share.png" alt="skill-skill: skills that actually change output" width="100%"></p>
+
 ![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)
 
 スキルを書くための Claude スキル。ただのメモの山ではなく、**生成結果を実際に変える**スキルを作れます。

@@ -2,6 +2,8 @@
 
 [English](README.md) | 简体中文 | [日本語](README.ja.md) | [한국어](README.ko.md) | [Tiếng Việt](README.vi.md) | [हिन्दी](README.hi.md)
 
+<p align="center"><img src="docs/share.png" alt="skill-skill: skills that actually change output" width="100%"></p>
+
 ![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)
 
 一个用来写 skill 的 skill：让 skill 在实际生成时**真正起作用**，而不是堆一堆笔记。

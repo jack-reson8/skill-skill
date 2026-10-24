@@ -2,6 +2,8 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | 한국어 | [Tiếng Việt](README.vi.md) | [हिन्दी](README.hi.md)
 
+<p align="center"><img src="docs/share.png" alt="skill-skill: skills that actually change output" width="100%"></p>
+
 ![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)
 
 스킬을 쓰기 위한 Claude 스킬입니다. 메모만 잔뜩 쌓인 스킬이 아니라, **실제 생성 결과를 바꾸는** 스킬을 만들어 줍니다.
