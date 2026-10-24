@@ -5,7 +5,7 @@ English | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국�
 <p align="center"><img src="docs/share.png" alt="skill-skill: skills that actually change output" width="100%"></p>
 <p align="center"><sub>Part of <a href="https://github.com/jack-reson8/copy-that"><b>Copy That</b></a> · install the whole set in one line</sub></p>
 
-![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)
+[![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)](https://jack-reson8.github.io/skill-skill/check/)
 
 A Claude skill for writing skills that **actually change what gets generated**, not piles of notes.
 

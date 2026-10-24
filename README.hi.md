@@ -5,7 +5,7 @@
 <p align="center"><img src="docs/share.png" alt="skill-skill: skills that actually change output" width="100%"></p>
 <p align="center"><sub><a href="https://github.com/jack-reson8/copy-that"><b>Copy That</b></a> सीरीज़ का हिस्सा · एक लाइन में पूरा सेट इंस्टॉल करें</sub></p>
 
-![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)
+[![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)](https://jack-reson8.github.io/skill-skill/check/)
 
 स्किल लिखने के लिए एक Claude स्किल, ताकि स्किल **असल में जनरेट होने वाले नतीजे को बदले**, सिर्फ़ नोट्स का ढेर बनकर न रह जाए।
 

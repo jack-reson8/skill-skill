@@ -5,7 +5,7 @@
 <p align="center"><img src="docs/share.png" alt="skill-skill: skills that actually change output" width="100%"></p>
 <p align="center"><sub><a href="https://github.com/jack-reson8/copy-that"><b>Copy That</b></a> シリーズの一つ · 1 行で全部インストール</sub></p>
 
-![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)
+[![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)](https://jack-reson8.github.io/skill-skill/check/)
 
 スキルを書くための Claude スキル。ただのメモの山ではなく、**生成結果を実際に変える**スキルを作れます。
 

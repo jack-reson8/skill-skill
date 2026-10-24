@@ -5,7 +5,7 @@
 <p align="center"><img src="docs/share.png" alt="skill-skill: skills that actually change output" width="100%"></p>
 <p align="center"><sub>属于 <a href="https://github.com/jack-reson8/copy-that"><b>Copy That</b></a> 系列 · 一行命令装全套</sub></p>
 
-![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)
+[![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)](https://jack-reson8.github.io/skill-skill/check/)
 
 一个用来写 skill 的 skill：让 skill 在实际生成时**真正起作用**，而不是堆一堆笔记。
 

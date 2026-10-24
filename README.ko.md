@@ -5,7 +5,7 @@
 <p align="center"><img src="docs/share.png" alt="skill-skill: skills that actually change output" width="100%"></p>
 <p align="center"><sub><a href="https://github.com/jack-reson8/copy-that"><b>Copy That</b></a> 시리즈 · 한 줄로 전체 설치</sub></p>
 
-![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)
+[![skill health](https://img.shields.io/badge/skill%20health-100%2F100-brightgreen)](https://jack-reson8.github.io/skill-skill/check/)
 
 스킬을 쓰기 위한 Claude 스킬입니다. 메모만 잔뜩 쌓인 스킬이 아니라, **실제 생성 결과를 바꾸는** 스킬을 만들어 줍니다.
 
