@@ -1,7 +1,7 @@
 {
   "name": "skill-skill",
   "description": "Write Claude skills that actually change what gets generated, and lint them with a 0-100 health score.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": { "name": "jack-reson8" },
   "homepage": "https://github.com/jack-reson8/skill-skill",
   "license": "MIT",
